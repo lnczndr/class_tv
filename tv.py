@@ -44,7 +44,13 @@ class TV:
             print ("Your volume must be between 1-7")
 
     # setting volume
-
+    def set_volume (self, volume):
+        if 0 < volume <= 7:
+            self.volume = volume
+            print ("Your volume is set to ", self.volume)
+        else:
+            print ("Your volume must be between 1-7")
+    
     # making the channel go up
     # making the channel go down
     # increasing the volume (up)
