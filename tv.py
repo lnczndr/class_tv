@@ -22,12 +22,19 @@ class TV:
     # getting channel
     def get_channel (self):
         self.channel = int(input("Enter channel: "))
-        if channel < 120:
+        if channel <= 120:
             print ("You are now on channel", self.channel)
         else:
             print ("The channel you've entered does not exist.")
 
     # setting the channel
+    def set_channel (self, channel):
+        if 0 < channel <= 120:
+            self.channel = channel
+            print ("The channel is set to", self.channel)
+        else:
+            print ("The channel is INVALID")
+
     # getting the volume
     # setting volume
     # making the channel go up
