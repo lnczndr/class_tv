@@ -60,7 +60,13 @@ class TV:
             print ("You are on the last channel")
 
     # making the channel go down
-    
+    def minus_channel (self):
+        if self.channel > 0:
+            self.channel -= 1
+            print ("You are on channel ", self.channel)
+        else:
+            print ("You are on the first channel")
+
     # increasing the volume (up)
     # decreasing the volume (down)
 
