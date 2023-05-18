@@ -52,7 +52,15 @@ class TV:
             print ("Your volume must be between 1-7")
     
     # making the channel go up
+    def add_channel (self):
+        if self.channel <= 120:
+            self.channel += 1
+            print ("You are on channel ", self.channel)
+        else:
+            print ("You are on the last channel")
+
     # making the channel go down
+    
     # increasing the volume (up)
     # decreasing the volume (down)
 
