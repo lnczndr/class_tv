@@ -8,10 +8,19 @@ class TV:
         self.power = False
         self.channel = 0
         self.volume = 0
-        
+
     # turning on the tv
+    def power_on(self):
+        self.power = True
+        print ("The TV is ON.")
+
     # turning off the tv
+    def power_off(self):
+        self.power = False
+        print ("The TV is OFF.")
+
     # getting channel
+
     # setting the channel
     # getting the volume
     # setting volume
