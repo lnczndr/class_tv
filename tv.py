@@ -21,15 +21,11 @@ class TV:
 
     # getting channel
     def get_channel (self):
-        self.channel = int(input("Enter channel: "))
-        if self.channel <= 120:
-            print ("You are now on channel", self.channel)
-        else:
-            print ("The channel you've entered does not exist.")
-
+        return self.channel
+    
     # setting the channel
     def set_channel (self, channel):
-        if 0 < channel < 120:
+        if 0 <= channel <= 120:
             self.channel = channel
             print ("The channel is set to", self.channel)
         else:
@@ -37,15 +33,11 @@ class TV:
 
     # getting the volume
     def get_volume (self):
-        self.volume = int(input("Enter Volume: "))
-        if self.volume > 7:
-            print ("Your volume is now ", self.volume)
-        else:
-            print ("Your volume must be between 1-7")
+        return self.volume
 
     # setting volume
     def set_volume (self, volume):
-        if 0 < volume <= 7:
+        if 0 <= volume <= 7:
             self.volume = volume
             print ("Your volume is set to ", self.volume)
         else:
@@ -83,4 +75,3 @@ class TV:
         else:
             print ("You are already at the minimum volume.")
 
-# output
