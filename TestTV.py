@@ -1,7 +1,8 @@
 # LANA CAZANDRA U. LEGASPI - BSCPE 1-5
 
-
 # Import the tv
+from tv import TV
+
 # Make 2 TV object
 # Turn on the TV
 # Set a channel
