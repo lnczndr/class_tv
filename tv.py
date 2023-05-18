@@ -68,6 +68,13 @@ class TV:
             print ("You are on the first channel")
 
     # increasing the volume (up)
+    def add_volume (self):
+        if self.volume <=7:
+            self.volume += 1
+            print ("Your volume is ", self.volume)
+        else:
+            print ("You are already at the maximum volume.")
+
     # decreasing the volume (down)
 
 # output
