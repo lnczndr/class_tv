@@ -29,7 +29,7 @@ class TV:
 
     # setting the channel
     def set_channel (self, channel):
-        if 0 < channel <= 120:
+        if 0 < channel < 120:
             self.channel = channel
             print ("The channel is set to", self.channel)
         else:
@@ -38,7 +38,7 @@ class TV:
     # getting the volume
     def get_volume (self):
         self.volume = int(input("Enter Volume: "))
-        if self.volume >= 7:
+        if self.volume > 7:
             print ("Your volume is now ", self.volume)
         else:
             print ("Your volume must be between 1-7")

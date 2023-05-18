@@ -5,7 +5,7 @@ from tv import TV
 
 # Make 2 TV object
 # Making the first TV object
-tv1 = TV()
+tv1 = TV(power=False, channel=0, volume=0)
 
 # Turn on the TV
 tv1.power_on()
@@ -14,7 +14,7 @@ tv1.power_on()
 tv1.set_channel (30)
 
 # Get the current channel
-current_channel_tv1 = tv1.get_channel
+current_channel_tv1 = tv1.get_channel()
 
 # Set the volume
 tv1.set_volume(3)
@@ -30,7 +30,7 @@ print ("TV 1's channel is ", current_channel_tv1, "and volume is ", current_volu
 print ()
 
 # Make the second TV object
-tv2 = TV()
+tv2 = TV(power=False, channel=0, volume=0)
 
 # Repeat the process
 # Turn on the second TV
