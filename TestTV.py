@@ -20,10 +20,14 @@ current_channel_tv1 = tv1.get_channel
 tv1.set_volume(3)
 
 # Get the current volume
-current_channel_tv1 = tv1.get_volume()
+current_volume_tv1 = tv1.get_volume()
 
 # Turn off the TV
 tv1.power_off()
+
+# Showing output
+print ("TV 1's channel is ", current_channel_tv1, "and volume is ", current_volume_tv1)
+print ()
 
 # Make the second TV object
 # Repeat the process
