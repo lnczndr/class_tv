@@ -5,9 +5,9 @@
 class TV:
     # defining methods for:
     def __init__ (self, power, channel, volume):
-        self.power = False
-        self.channel = 0
-        self.volume = 0
+        self.power = power
+        self.channel = channel
+        self.volume = volume
 
     # turning on the tv
     def power_on(self):
@@ -20,6 +20,12 @@ class TV:
         print ("The TV is OFF.")
 
     # getting channel
+    def get_channel (self):
+        self.channel = int(input("Enter channel: "))
+        if channel < 120:
+            print ("You are now on channel", self.channel)
+        else:
+            print ("The channel you've entered does not exist.")
 
     # setting the channel
     # getting the volume
